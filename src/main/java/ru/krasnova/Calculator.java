@@ -1,10 +1,17 @@
 package ru.krasnova;
 
 public class Calculator {
-    public int evaluate(String expression) {
-        int sum = 0;
-        for (String summand: expression.split("\\+"))
-            sum += Integer.valueOf(summand);
-        return sum;
+
+    public int sum(int a, int b){
+        return a + b;
     }
+
+    public int division(int a, int b){
+        return a/b;
+    }
+
+    public int multiplication(int a, int b){
+        return a*b;
+    }
+
 }
